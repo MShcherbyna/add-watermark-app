@@ -15,4 +15,10 @@ Interface ImageServiceContract
      * @return void
      */
     public function removeImage(string $path): void;
+
+    /**
+     * @param array $payload
+     * @return array|null
+     */
+    public function addWatermark(array $payload): ?array;
 }
